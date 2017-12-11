@@ -1,0 +1,11 @@
+{
+    "name" : "UtilityTools",
+    "version" : "0.0.1",
+    "description" : "Utility tools to setup",
+    "icon" : "fa-bomb",
+    "main_controller" : "rrsoacis\\apps\\tkmnet\\ro_utility\\MainPage",
+    "sub_controller" : [
+			["control","rrsoacis\\apps\\tkmnet\\ro_utility\\ControlPage"]
+		],
+    "dependencies" : [ ]
+}
