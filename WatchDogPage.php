@@ -37,7 +37,7 @@ class WatchDogPage extends AbstractPage
             }
         }
 		?>
-		<meta http-equiv="refresh" content="120;URL=./">
+		<meta http-equiv="refresh" content="120;URL=./ro_utility-watchdog">
 		<?php
 	}
 }
