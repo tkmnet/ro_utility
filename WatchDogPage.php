@@ -27,7 +27,7 @@ class WatchDogPage extends AbstractPage
 
 	function writeBatchSetup()
 	{
-        $hosts = json_decode(file_get_contents("http://localhost:3000/runs/_jobs_table.json?run_status=running"), true);
+        $hosts = json_decode(file_get_contents("http://localhost:3000/runs/_jobs_table.json?run_status=running&length=100"), true);
         foreach ($hosts["data"] as $host) {
             if (substr($host[8], -1 * strlen(" h ago")) === " h ago") {
                 $runid = substr($host[0], 5 + strpos($host[0], 'runs/'));
