@@ -31,10 +31,11 @@ class WatchDogPage extends AbstractPage
         foreach ($hosts["data"] as $host) {
             $runid = substr($host[0], 5 + strpos($host[0], 'runs/'));
             $runid = substr($runid, 0, strpos($runid, '"'));
-            print($runid . "(" . $host[8] . ")<br>");
             if (substr($host[8], -1 * strlen(" h ago")) === " h ago") {
                 exec("/home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid);
+                print("[Repost] ");
             }
+            print($runid . "(" . $host[8] . ")<br>");
         }
 		?>
 		<meta http-equiv="refresh" content="120;URL=./ro_utility-watchdog">
