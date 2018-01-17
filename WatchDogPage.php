@@ -33,7 +33,7 @@ class WatchDogPage extends AbstractPage
             $runid = substr($runid, 0, strpos($runid, '"'));
             print($runid . "(" . $host[8] . ")<br>");
             if (substr($host[8], -1 * strlen(" h ago")) === " h ago") {
-                exec("nohup /home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid);
+                exec("/home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid);
             }
         }
 		?>
