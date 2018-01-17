@@ -67,7 +67,7 @@ class MainPage extends AbstractPage
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <form id="post-form" action="<?= Config::$TOP_PATH . "app/tkmnet/ro_utility-watchdog" ?>" method="POST"
+                        <form id="post-form" action="<?= Config::$TOP_PATH . "app/tkmnet/ro_utility-watchdog" ?>" method="GET"
                               class="form-horizontal">
                             <input class="btn" type="submit" value="Start">
                         </form>
