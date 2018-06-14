@@ -30,13 +30,13 @@ class WatchDogPage extends AbstractPage
         $hosts = json_decode(file_get_contents("http://localhost:3000/runs/_jobs_table.json?run_status=running&length=100"), true);
         foreach ($hosts["data"] as $host) {
             $runid = substr($host[0], 7 + strpos($host[0], 'value="'), 24);
-            if (substr($host[8], -1 * strlen(" h ago")) === " h ago") {
+            if (substr($host[9], -1 * strlen(" h ago")) === " h ago") {
                 //exec("nohup /home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid . " >/dev/null 2>&1 &");
                 //usleep(100000);
                 ScriptManager::queueBashScript("/home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid);
                 print("[Repost] ");
             }
-            print($runid . "(" . $host[8] . ")<br>");
+            print($runid . "(" . $host[9] . ")<br>");
         }
 		?>
 		<meta http-equiv="refresh" content="120;URL=./ro_utility-watchdog">
