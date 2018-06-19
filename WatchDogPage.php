@@ -33,7 +33,7 @@ class WatchDogPage extends AbstractPage
             if (substr($host[9], -1 * strlen(" h ago")) === " h ago") {
                 //exec("nohup /home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid . " >/dev/null 2>&1 &");
                 //usleep(100000);
-                ScriptManager::queueBashScript("/home/oacis/oacis/bin/oacis_cli replace_runs_by_ids ". $runid);
+                ScriptManager::queueBashScript("/home/oacis/oacis/bin/oacis_ruby /home/oacis/rrs-oacis/ruby/repost.rb ". $runid);
                 print("[Repost] ");
             }
             print($runid . "(" . $host[9] . ")<br>");
