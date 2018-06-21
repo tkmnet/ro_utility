@@ -19,7 +19,7 @@ class WatchDogPage extends AbstractPage
 
 	function body()
 	{
-		self::writeContentHeader("WatchDog");
+		self::writeContentHeader("UtilityTools", "WatchDog", ["<a href='/app/tkmnet/ro_utility'>UtilityTools</a>"]);
 		self::beginContent();
 		$this->writeBatchSetup();
 		self::endContent();

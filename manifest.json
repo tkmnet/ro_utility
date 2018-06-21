@@ -6,7 +6,8 @@
     "main_controller" : "rrsoacis\\apps\\tkmnet\\ro_utility\\MainPage",
     "sub_controller" : [
             ["watchdog","rrsoacis\\apps\\tkmnet\\ro_utility\\WatchDogPage"],
-			["control","rrsoacis\\apps\\tkmnet\\ro_utility\\ControlPage"]
+	    ["scorecalc","rrsoacis\\apps\\tkmnet\\ro_utility\\ScoreCalcPage"],
+	    ["control","rrsoacis\\apps\\tkmnet\\ro_utility\\ControlPage"]
 		],
     "dependencies" : [ ]
 }
