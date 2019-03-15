@@ -76,6 +76,7 @@ class MainPage extends AbstractPage
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
@@ -92,6 +93,29 @@ class MainPage extends AbstractPage
                         <form id="post-form" action="<?= Config::$TOP_PATH . "app/tkmnet/ro_utility-scorecalc" ?>" method="GET"
                               class="form-horizontal">
                             <input class="btn" type="submit" value="Jump">
+                        </form>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">
+                            RestartOacis
+                            <small></small>
+                        </h3>
+                        <div class="box-tools pull-right">
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <form id="post-form" action="<?= Config::$TOP_PATH . "app/tkmnet/ro_utility-restartoacis" ?>" method="GET"
+                              class="form-horizontal">
+                            <input class="btn" type="submit" value="Restart">
                         </form>
                     </div>
                     <!-- /.box-body -->
