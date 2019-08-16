@@ -75,7 +75,7 @@ class ScoreCalcPage extends AbstractPage
 						class="form-horizontal">
 				<div class="box-body">
 					<div class="form-group">
-						<label for="note" class="col-sm-2 control-label">CSV</label>
+						<label for="note" class="col-sm-2 control-label">List</label>
 						<div class="col-sm-10">
 						<textarea class="form-control" id="input" name="input" rows="16"><?= (isset($_POST["input"])?$_POST["input"]:"") ?></textarea>
 						</div>
